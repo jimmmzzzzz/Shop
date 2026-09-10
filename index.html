@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="NOVA — thoughtfully selected everyday goods, technology and style." />
+  <title>NOVA — Everyday, better.</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">
+    <p>Free delivery on orders over ₦150,000</p>
+    <button class="announcement-close" aria-label="Close announcement">×</button>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NOVA home">NOVA<span>.</span></a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#new">New in</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our story</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button search-toggle" aria-label="Search products">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg>
+      </button>
+      <button class="cart-button" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h14l-2 9H8L6 4H3m6 16h.01M17 20h.01"/></svg>
+        <span>Cart</span>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu-close" aria-label="Close menu">×</button>
+    <nav>
+      <a href="#new">New in</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <p>Made for everyday life.</p>
+  </div>
+
+  <div class="search-panel" aria-hidden="true">
+    <div class="search-inner">
+      <label for="site-search">What are you looking for?</label>
+      <div class="search-row">
+        <input id="site-search" type="search" placeholder="Search products…" autocomplete="off" />
+        <button class="search-close" aria-label="Close search">×</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="new">
+      <div class="hero-copy">
+        <p class="eyebrow">New collection · 2026</p>
+        <h1>Everyday things.<br /><em>Chosen better.</em></h1>
+        <p class="hero-text">Useful, well-designed pieces for work, weekends and everything between.</p>
+        <a class="button button-dark" href="#shop">Shop the collection
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1528921581519-52b9d779df2b?auto=format&fit=crop&w=1800&q=88" alt="Everyday technology and accessories arranged on a table" />
+        <div class="hero-image-note">
+          <span>01</span>
+          <p>Objects worth keeping</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Store benefits">
+      <div><span>01</span><p>Curated essentials</p></div>
+      <div><span>02</span><p>Fast nationwide delivery</p></div>
+      <div><span>03</span><p>7-day easy returns</p></div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The collection</p>
+          <h2>Shop what lasts.</h2>
+        </div>
+        <p>Thoughtful products without the noise. Quality materials, useful details, clean design.</p>
+      </div>
+
+      <div class="shop-tools">
+        <div class="filter-chips" role="group" aria-label="Filter products">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="tech">Tech</button>
+          <button class="chip" data-filter="style">Style</button>
+          <button class="chip" data-filter="everyday">Everyday</button>
+        </div>
+        <p class="result-count"><span id="result-count">8</span> pieces</p>
+      </div>
+
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <h3>No products found.</h3>
+        <p>Try a different search or category.</p>
+      </div>
+    </section>
+
+    <section class="editorial" id="story">
+      <div class="editorial-image">
+        <img src="https://images.unsplash.com/photo-1522897355400-c4fdec73d979?auto=format&fit=crop&w=1600&q=88" alt="Minimal selection of fashion and everyday accessories" />
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">Why NOVA</p>
+        <h2>Less clutter.<br />Better choices.</h2>
+        <p>We built NOVA around a simple idea: a smaller store can make better decisions. Every item earns its place through usefulness, feel and longevity.</p>
+        <a href="#shop" class="text-link">Explore all pieces <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <p class="eyebrow">Stay in the loop</p>
+        <h2>New drops, no spam.</h2>
+      </div>
+      <form id="newsletter-form">
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Your email address" required />
+        <button type="submit">Join</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">NOVA<span>.</span></a>
+    <div class="footer-links">
+      <a href="#shop">Shop</a>
+      <a href="#story">About</a>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+    </div>
+    <p>© 2026 NOVA Goods. Demo storefront.</p>
+  </footer>
+
+  <aside class="cart-drawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your bag</p>
+        <h2>Cart <span class="cart-count-label">(0)</span></h2>
+      </div>
+      <button class="cart-close" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty">
+      <p>Your cart is feeling light.</p>
+      <button class="button button-dark continue-shopping">Start shopping</button>
+    </div>
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">₦0</strong></div>
+      <p>Delivery is calculated at checkout.</p>
+      <button class="button button-dark checkout-button">Proceed to checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" hidden></div>
+
+  <dialog class="product-modal" id="product-modal">
+    <button class="modal-close" aria-label="Close product details">×</button>
+    <div class="modal-image-wrap"><img id="modal-image" src="" alt="" /></div>
+    <div class="modal-copy">
+      <p class="eyebrow" id="modal-category"></p>
+      <h2 id="modal-name"></h2>
+      <p class="modal-price" id="modal-price"></p>
+      <p id="modal-description"></p>
+      <div class="modal-detail-row"><span>Delivery</span><strong>2–5 working days</strong></div>
+      <div class="modal-detail-row"><span>Returns</span><strong>7 days</strong></div>
+      <button class="button button-dark modal-add">Add to cart</button>
+    </div>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
