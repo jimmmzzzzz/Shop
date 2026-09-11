@@ -1,6 +1,12 @@
 # NOVA Shop
 
-A polished responsive e-commerce storefront built with plain HTML, CSS and JavaScript.
+A polished, responsive e-commerce storefront demo built with plain HTML, CSS and JavaScript.
+
+## Live Demo
+
+https://jimmmzzzzz.github.io/Shop/
+
+> **Demo only:** This project is a front-end e-commerce showcase and is not a live production store. Checkout and payments are not connected to a real payment processor or backend.
 
 ## Features
 
